@@ -5,7 +5,7 @@ RUN pip install cmake
 WORKDIR /opt
 RUN git clone https://github.com/k2-fsa/k2.git \
     && cd k2 \
-    && python3 setup.py install
+    && K2_MAKE_ARGS="-j2" python3 setup.py install
 # Install lhoste
 RUN pip install git+https://github.com/lhotse-speech/lhotse
 RUN git clone https://github.com/k2-fsa/icefall \
