@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:21.09-py3
+FROM nvcr.io/nvidia/pytorch:21.08-py3
 # Install prerequisites
 RUN pip install cmake
 # Install k2
