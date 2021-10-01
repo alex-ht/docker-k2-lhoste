@@ -12,3 +12,4 @@ RUN git clone https://github.com/k2-fsa/icefall \
     && cd icefall \
     && pip install -r requirements.txt
 ENV PYTHONPATH=/opt/icefall:$PYTHONPATH
+WORKDIR /opt/icefall
