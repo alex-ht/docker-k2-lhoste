@@ -10,5 +10,5 @@ RUN git clone https://github.com/k2-fsa/k2.git \
 RUN pip install git+https://github.com/lhotse-speech/lhotse
 RUN git clone https://github.com/k2-fsa/icefall \
     && cd icefall \
-    && pip install -r requirements.txt \
+    && pip install -r requirements.txt
 ENV PYTHONPATH=/opt/icefall:$PYTHONPATH
