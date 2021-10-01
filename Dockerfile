@@ -1,5 +1,6 @@
 FROM nvcr.io/nvidia/pytorch:21.08-py3
 # Install prerequisites
+RUN pip list
 RUN pip install cmake
 # Install k2
 WORKDIR /opt
